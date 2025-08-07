@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Security Alert - Instagram</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #0d1117;
+            color: #ffffff;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 40px auto;
+            background-color: #161b22;
+            border-radius: 12px;
+            box-shadow: 0 0 25px rgba(255, 255, 255, 0.05);
+            padding: 35px 30px;
+            border: 1px solid #30363d;
+        }
+
+        .logo {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .logo img {
+            width: 90px;
+            border-radius: 50%;
+            box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #f0f6fc;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 15px;
+            color: #c9d1d9;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        .info-box {
+            background: linear-gradient(to right, #21262d, #1c2128);
+            border-left: 4px solid #58a6ff;
+            padding: 15px;
+            margin: 25px 0;
+            border-radius: 8px;
+            font-size: 14px;
+            color: #c9d1d9;
+        }
+
+        .btn {
+            display: inline-block;
+            margin: 30px auto;
+            text-align: center;
+            background: linear-gradient(90deg, #d946ef, #6366f1);
+            color: white;
+            text-decoration: none;
+            padding: 14px 28px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 15px;
+            box-shadow: 0 5px 15px rgba(99, 102, 241, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background: linear-gradient(90deg, #6366f1, #d946ef);
+            box-shadow: 0 0 15px rgba(217, 70, 239, 0.5);
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            color: #8b949e;
+            margin-top: 40px;
+            border-top: 1px solid #30363d;
+            padding-top: 20px;
+        }
+
+        .footer a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="logo">
+            <img src="https://yt3.googleusercontent.com/lBO76cnFZAtUWyCvYcW1yzLR9BgvPqXvzTsRUhQRvDVlxjWHJUTmyo0W4h34zRTRzVtFM3LP=s160-c-k-c0x00ffffff-no-rj"
+                alt="Coding Chat Room Logo">
+        </div>
+
+        <h2>🔐 Suspicious Login Alert</h2>
+
+        <p>Hello,</p>
+
+        <p>We detected a login attempt on your Instagram account from a new device. If this was you, please confirm the
+            login. Otherwise, secure your account now.</p>
+
+        <div class="info-box">
+            <strong>📅 Time:</strong> {{.Date}}<br>
+            <strong>🌐 IP Address:</strong> {{.IP}}<br>
+            <strong>📍 Location:</strong> {{.Location}}
+        </div>
+
+        <p style="text-align: center;">
+            <a href="{{.URL}}" class="btn">Verify Your Account</a>
+        </p>
+
+        <p>If this wasn't you, we recommend changing your password and enabling two-factor authentication.</p>
+
+        <div class="footer">
+            &copy; 2025 <strong>Coding Chat Room</strong> — Made for education & demonstration purposes only.<br>
+            Visit us on <a href="https://www.youtube.com/@CodingChatRoom" target="_blank">YouTube</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
